@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto HTML</title>
+        <link rel="shortcut icon" href="./assets/imagenes/codoacodo.png">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./js/bootstrap.js">
+              
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .header__flex{
+                background-color: rgb(75, 71, 71);
+                display: flex;
+                justify-content: left;
+                
+            }
+            .justificadofinal{
+                justify-content: end;
+                width: 100%;
+            }
+            
+            @media screen and (max-width: 900px) {
+                .header__flex{
+                    flex-direction: column;
+                }
+                    
+            }
+            @media (min-width: 700px) { 
+                .navbar{
+                    text-align: center;
+                }
+            }
+            .navegador{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between right;
+
+            }
+            .link{
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                margin: 6px;
+            }
+            
+            .sectionTarjeta{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                align-content: space-around;
+            }
+            .padreTarjetas{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tarjetas__flex{
+                width: 65%;
+                display: flex;
+                justify-content:space-evenly;
+            }
+            .tarjeta{
+                background-color: white;
+                width: 30%;
+                border: 1px solid rgb(214, 214, 214);
+                border-radius: 10px;
+            }
+            
+            .bg-info1 {
+                position: relative;
+                bottom: 0%;
+                width: 100%;
+                padding: 0.1%;
+                background-color: rgb(48, 30, 97);
+                display: flex;
+                justify-content:center;
+                color: white;
+                height: 70px;
+                vertical-align: text-top;
+                
+                
+                
+              }
+            .botones1{
+              background-color: rgba(154, 233, 27, 0.842);
+              position: relative;
+              width: 49.6%;
+              color: white;
+              display: flexbox;
+              padding: 1%;
+              margin-bottom: 1%;
+              
+
+            }
+            .boton2{
+              background-color: rgba(136, 103, 212, 0.842);
+              position: relative;
+              width: 95%;
+              color: rgb(57, 13, 216);
+              margin-top: 10%;
+             
+            
+            }
+            .total{
+              display:flexbox;
+              position: relative;
+              text-align: left;
+              margin-top: 0%;
+            }
+            
+        </style>
+    </head>
+    <body>
+      
+     
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-secondary">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="#">
+                    <img src="./imagenes/codoacodo.png" alt="logo" width="90">
+                    Conf.Bs.As.
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                        <ul class="navbar-nav me-auto mb-1 mb-lg-0 justificadofinal">
+                            <li class="nav-item">
+                             <a class="nav-link active text-white" aria-current="page" href="../index.html">La conferencia</a>
+                            </li>
+                            <li class="nav-item"> <a  class="nav-link" href="./los_oradores.html">Los oradores</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#lugarYFecha">El lugar y la Fecha</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#formulario">Conviértete en Orador</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-bg-success" href="#comprartickets.html">Comprar Tickets</a></li>
+                         
+                         </ul>
+                   
+                  </div>
+                </div> 
+              </nav>
+        </header>
+        <br>
+        
+        <section class="sectionTarjeta">
+            <div class="tarjetas__flex ">
+                <div class="card rounded-0 border-primary" style="width: 17.5rem;">
+                  
+                  <div class="card-body">
+                    <h5 class="text-center">Estudiante</h5>
+                    <p class="text-center">Tiene un descuento</p>
+                    <p class="text-center">80%</p>
+                    <p class="text-center">*presentar documentación</p>
+                    
+                  </div>
+                </div>
+                <div class="card rounded-0 border-primary" style="width: 17.5rem;">
+                    <div class="card-body">
+                    <div>
+                        
+                    </div>
+                    <h5 class="text-center">Trainee</h5>
+                    <p class="text-center">Tienen un descuento</p>
+                    <p class="text-center">50%</p>
+                    <p class="text-center">*presentar documentación</p>
+                    
+                  </div>
+                </div>
+                <div class="card rounded-0 border-warning" style="width: 17.5rem;">
+                  
+                  <div class="card-body">
+                    <div>
+                        
+                    </div>
+                    <h5 class="text-center">Junior</h5>
+                    <p class="text-center">Tienen un descuento</p>
+                    <p class="text-center">15%</p>
+                    <p class="text-center">*presentar documentación</p>
+                    
+                  </div>
+                </div>
+            
+              </div>
+           
+        </section>
+            <div class="container-fluid px-1 py-5 mx-auto">
+              <div class="row d-flex justify-content-center">
+                  <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                      <h7>VENTA</h7>
+                     <H2><p class="blue-text">VALOR DE TICKET $200</p></H2>
+                    
+                     <div class="card border border-0">
+              </div>          
+                    
+        <form class="form-card rounded-2" onsubmit="event.preventDefault()">
+              <div class="row  text-left rounded-2">
+                
+                  
+            </form>                       
+                <div class="row justify-content-between text-left px-lg-6 m-2">
+                  <div class="col-6 px-6">
+                                      
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                      <div class="valid-feedback">
+                       Looks good!
+                      </div>
+                  </div>
+                   <div class="col-6 px-6">
+                    
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                   </div>
+                   <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"></label>
+                     <input type="email" class="form-control" id="mail" placeholder="Correo">
+                  </div>
+         
+                                    
+                    <div class="col-md-6">
+                      <label for="validationCustom03" class="form-label">Cantidad</label>
+                      <input type="number" class="form-control" id="cantidadTickets" required>
+                  
+                    <div class="invalid-feedback">
+                    Por favor ingrese una cantidad valida
+                  </div>
+                    </div>
+                    <div class="col-md-6">
+                       <label for="validationCustom04" class="form-label">Categoria</label>
+                       <select class="form-select" id="categoria" required>
+                          <option selected disabled value="0">Sin categoria</option>
+                          <option value="2">Trainee</option>
+                          <option value="3">Junior</option>
+                          <option value="1">Estudiante</option>
+                      </select>
+                      <div class="invalid-feedback">
+                       Por favor ingrese un valor valido
+                       </div>
+                    </div>
+                                    
+                                    <br>
+                                    <br>    
+                  <div class="alert alert-primary mt-3 mb-4 total" role="alert">
+                     <h5 class="total">Total a Pagar: $ <span id="totalValor" class="align-middle"></span></h5>
+                    
+
+                  </div>
+                  
+              <div class="container ">
+                <button class="btn botones1" type="reset" id="btnBorrar">Borrar</button>
+                <button class="btn botones1" type="button" id="btnresumen">Resumen</button>
+
+              </div>
+              
+            </div>
+                   
+            </form>
+                    </div>
+                </div>
+            </div>
+             
+       
+        <footer class="navbar-expand navbar float-end container-fluid p-0 "> 
+            <div class="navbar-collapse navbar-expand-lg row bg-info1 container-fluid text-center row-cols-8">
+                <div class="col"> <a class="link" href="">Preguntas Frecuentes</a>
+                      
+                </div>
+                <div class="col"> <a class="link" href="">Contactanos</a>
+                      
+                </div>
+                <div class="col"> <a class="link" href="">Prensa</a>
+                      
+                </div>
+                <div class="col"> <a class="link" href="">Conferencia</a>
+                      
+                </div>
+                <div class="col"> <a class="link" href="">Términos y condiciones</a>
+                      
+                </div>
+                <div class="col"> <a class="link" href="">Publicidad</a>
+                      
+                </div>
+                <div class="col"> <a class="link" href="">Estudiantes</a>
+                </div>
+            </div>
+        </footer>
+       <script src="js/bootstrap.bundle.js"></script> 
+       <script src="./codigo.js"></script>
+    </body>
+</html>

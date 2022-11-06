@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto HTML</title>
+        <link rel="shortcut icon" href="./assets/imagenes/codoacodo.png">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./js/bootstrap.js">
+        <!--<link rel="stylesheet" href="./CCS/estilos.css">-->
+       
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .header__flex{
+                background-color: rgb(75, 71, 71);
+                display: flex;
+                justify-content: left;
+                
+            }
+            .justificadofinal{
+                justify-content: end;
+                width: 100%;
+            }
+            .logo{
+                display: flex;
+                align-items: center;
+                width: 40%;
+                padding-left: 2rem;
+            }
+            .img__logo{
+                width: 25%;  
+                
+            }
+            .sectionPrincipal{
+                background: linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5)), url("assets/imagenes/ba1.jpg");
+                height: 100vh;
+                width: 100%;
+                align-content: center;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .contenidoPrincipal{
+                width: 60%;
+                text-align: right;
+                color: white;
+               
+            }
+            @media screen and (max-width: 900px) {
+                .header__flex{
+                    flex-direction: column;
+                }
+                    
+            }
+            .navegador{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between right;
+
+            }
+            .link{
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                margin: 6px;
+            }
+            .link1{
+                text-decoration: none;
+                color: rgb(15, 233, 15);
+                font-size: 1rem;
+                margin: 25px;
+            }
+            .link2{
+                color: white;
+            }
+            .sectionTarjeta{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .padreTarjetas{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .tarjetas__flex{
+                width: 65%;
+                display: flex;
+                justify-content:space-evenly;
+            }
+            .tarjeta{
+                background-color: white;
+                width: 30%;
+                border: 1px solid rgb(214, 214, 214);
+                border-radius: 10px;
+            }
+            .tarjetaImagen{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .tarjetaContenido{
+                padding: 1rem;
+            }
+            .tarjetaParrafo{
+                width: 80%;
+            }
+            .tabla{
+                width: 50%;
+                align-items: center;
+                align-content: center;
+                justify-content: space-around;
+                margin: auto;
+            }
+            .imagenMain{
+                width: 100%;
+            }
+            .sectiondividida{
+                display: flex;
+                height: 70vh;
+            }
+            .imagenIzquierda{
+                height: 100%;
+                width: 50%;
+                background-image: url("assets/imagenes/PtoM.jpg");
+                background-size: cover;
+            
+            }
+            .contenidoderecho{
+                height: 100%;
+                width: 50%;
+                padding: 2rem;
+                background-color: #343333;
+                color: white;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .ovalbutton{
+                color: rgb(20, 120, 207);
+                background: transparent url('media/oval-gray-left.gif') no-repeat top left;
+                display: center;
+                float: left;
+                font: normal 15px Tahoma; /* Change 13px as desired */
+                line-height: 15px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+                height: 35px; /* Height of button background height */
+                width: 190px;
+                padding-left: 11px; /* Width of left menu image */
+                text-decoration: none;
+                border: 1px solid rgb(214, 214, 214);
+                border-radius: 10px;
+            }
+            .bg-info1 {
+                padding: 1%;
+                background-color: rgb(48, 30, 97);
+                display: flex;
+                justify-content:center;
+                color: white;
+                height: 45px;
+                vertical-align: text-top;
+                }
+
+            
+        </style>
+    </head>
+    <body>
+       
+        <header >
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="#">
+                    <img src="./assets/imagenes/codoacodo.png" alt="logo" width="100">
+                    Conf.Bs.As.
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justificadofinal">
+                            <li class="nav-item">
+                             <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
+                            </li>
+                            <li class="nav-item"> <a  class="nav-link" href="#oradores">Los oradores</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#lugarYFecha">El lugar y la Fecha</a></li>
+                            <li class="nav-item"> <a  class="nav-link" href="#formulario">Conviértete en Orador</a></li>
+                            <li class="nav-item"> <a  class="nav-link text-bg-success" href="./page/comprartickets.html">Comprar Tickets</a></li>
+                         
+                         </ul>
+                   
+                  </div>
+                </div> 
+              </nav>
+        </header>
+        <main>
+            <section class="sectionPrincipal ">
+                <div class="contenidoPrincipal">    
+                    <h3 class="">Conferencia Bs.As.</h3>
+                    <p>El evento, que sesionará de manera virtual del 1ro al 3 de Octubre, invita a investigadores, 
+                        ingenieros y especialistas en telecomunicaciones, electrónica y software, a presentar soluciones 
+                        para sistemas de telecomunicaciones, así como el diseño de herramientas de planeamiento, monitoreo 
+                        y optimización..</p>
+                    <br>
+                    <div>
+                        <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                        <button type="button" class="btn btn-success">Comprar tickets</button>
+                    </div>
+                    
+                </div>
+                <script src="js/bootstrap.bundle.js"></script>
+            </section>
+        </main>
+        <section class="sectionTarjeta">
+            <div class="text-center">
+                <h6>CONOCE A LOS</h6>
+                <h3>ORADORES</h3>
+            </div>
+            <div class="tarjetas__flex">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./assets/imagenes/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                  <div class="card-body">
+                    <div>
+                        <h6 class="badge text-bg-warning">JavaScript</h6>
+                        <h6 class="badge text-bg-primary">React</h6>
+
+                    </div>
+                    <h5 class="card-title">Steve  Jobs</h5>
+                    <p class="card-text">Creador del primer ordenador personal y fundador de Apple Computer. 
+                        Informático y empresario estadounidense. Fundador de Apple Computer 
+                         </p>
+                    
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="Bill Gates">
+                  <div class="card-body">
+                    <div>
+                        <h6 class="badge text-bg-warning">JavaScript</h6>
+                        <h6 class="badge text-bg-primary">React</h6>
+
+                    </div>
+                    <h5 class="card-title">Bill Gates</h5>
+                    <p class="card-text">Empresario, informático y filántropo estadounidense, creador y 
+                        fundador junto con Paul Allen de Microsoft. Copresidente de la Fundación Bill y Melinda Gates
+                    </p>
+                    
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                  <div class="card-body">
+                    <div>
+                        <h6 class="badge text-bg-warning">Negocios</h6>
+                        <h6 class="badge text-bg-danger">Startups</h6>
+
+                    </div>
+                    <h5 class="card-title">Ada Lovelace</h5>
+                    <p class="card-text">Primera programadora de la historia. Matemática y escritora inglesa, 
+                        revolucionó la ciencia con sus conocimientos ideo, el primer programa informático</p>
+                    
+                  </div>
+                </div>
+            
+              </div>
+           
+        </section>
+        <br>
+        <section class="sectiondividida">
+            <div class="imagenIzquierda">
+            
+            </div>
+               
+                <div class="contenidoderecho">
+                    <h3>Bs.As. Octubre</h3>
+                    <p>El Instituto de Investigación y Desarrollo de Telecomunicaciones (LACETEL) junto al Grupo Empresarial de la Informática y las Comunicaciones (GEIC) convocan a la VII Conferencia Anual de Tecnologías de la Información, Multimedia y Telecomunicaciones, ACIMUTT 22.
+                        
+                        Según informó la web del Ministerio de Comunicaciones, el programa incluye conferencias magistrales y presentaciones orales de los trabajos aprobados por el Comité Científico, además de espacios para el intercambio sobre los temas presentados.
+                        
+                        Optimización del espectro radioeléctrico, tecnologías inalámbricas y redes móviles.</p>
+                    <br>
+                    <div>
+                        <button type="button" class="btn btn-dark">Conoce más</button>
+                    </div>
+                </div>
+
+        </section> 
+            
+        <section>
+           
+            <br><br>
+        </section>
+            <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Orador</th>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Las etiquetas <tr> (del inglés "table row") definen cada fila de la tabla y 
+                    encierran todas las columnas. Por último, la etiqueta <td> (del inglés "table data cell") define cada una de las columnas de las filas-->
+                <tr>
+                    <td>Steve Jobs</td>
+                    <td>Lun. Y Mie.</td>
+                    <td>18:30hs a 20:00hs</td>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>Mart. Y Juev.</td>
+                    <td>18:30hs a 20:00hs</td>
+                </tr>
+                
+                <tr>
+                    <td>Ada Lovelace</td>
+                    <td>Lun. Y Mie.</td>
+                    <td>10:00hs a 11:30hs</td>
+                </tr>
+                
+            </tbody>
+            
+        
+            <tfoot>
+                <!--tfoot pie de pagina-->
+                <tr>
+                    <td>
+                        <br>
+                        <div>
+                            <button type="button" class="btn btn-dark">Sacar entradas</button>
+                        </div>
+                
+                    </td>
+                    
+                </tr>
+            </tfoot>
+           
+        </table>
+       </section>
+       <br><br>
+       <section>
+        <div class="container-fluid px-1 py-5 mx-auto">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                    <h3>Conviértete en un</h3>
+                    <p class="blue-text">ORADOR<br>Anotate como orador para dar una charla ignite.
+                        Cuentanos de que quieres hablar!</p>
+                    <div class="card">
+                        
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre" onblur="validate(1)"> </div>
+                                <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellido<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido" onblur="validate(2)"> </div>
+                            </div>
+                                <div class="row justify-content-between text-left">
+                                
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label for="form_message"></label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Sobre que quieres hablar!" rows="4" required="required" data-error="Por favor, déjenos un mensaje"></textarea
+                                          >
+                                      </div>
+          
+                                  </div>
+          
+          
+                              <div class="col-md-12">
+                                      <div class="d-grid gap-2">
+                                        <button class="btn btn-success" type="button">Enviar</button>
+                                        
+                                      </div>
+                              
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+       </section>
+       
+
+         </form>
+       </section>
+       <br>
+       
+       </article>
+     
+       <footer> 
+            <div class="row bg-info1 container-fluid text-center text-wrap ">
+                <div class="col"> <a class="link" href="">Preguntas Frecuentes</a>
+                  
+                </div>
+                <div class="col"> <a class="link" href="">Contactanos</a>
+                  
+                </div>
+                <div class="col"> <a class="link" href="">Prensa</a>
+                  
+                </div>
+                <div class="col"> <a class="link" href="">Conferencia</a>
+                  
+                </div>
+                <div class="col"> <a class="link" href="">Términos y condiciones</a>
+                  
+                </div>
+                <div class="col"> <a class="link" href="">Publicidad</a>
+                  
+                </div>
+                <div class="col"> <a class="link" href="">Estudiantes</a>
+                  
+                </div>
+            </div>
+       </footer>
+       
+    </body>
+</html>
